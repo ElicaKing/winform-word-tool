@@ -13,3 +13,4 @@ C:\Users\shenh\Documents\GitHub\winform-word-tool\WordOpenXmlClassLibrary\obj\De
 C:\Users\shenh\Documents\GitHub\winform-word-tool\WordOpenXmlClassLibrary\obj\Debug\WordOpenXmlClassLibrary.csproj.CopyComplete
 C:\Users\shenh\Documents\GitHub\winform-word-tool\WordOpenXmlClassLibrary\obj\Debug\WordOpenXmlClassLibrary.dll
 C:\Users\shenh\Documents\GitHub\winform-word-tool\WordOpenXmlClassLibrary\obj\Debug\WordOpenXmlClassLibrary.pdb
+C:\Users\shenh\Documents\GitHub\winform-word-tool\WordOpenXmlClassLibrary\obj\Debug\WordOpenXmlClassLibrary.csprojAssemblyReference.cache
