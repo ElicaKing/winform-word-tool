@@ -1,0 +1,10 @@
+C:\Users\shenh\Documents\GitHub\winform-word-tool\WordOpenXmlClassConsole\bin\Debug\WordOpenXmlClassConsole.exe.config
+C:\Users\shenh\Documents\GitHub\winform-word-tool\WordOpenXmlClassConsole\bin\Debug\WordOpenXmlClassConsole.exe
+C:\Users\shenh\Documents\GitHub\winform-word-tool\WordOpenXmlClassConsole\bin\Debug\WordOpenXmlClassConsole.pdb
+C:\Users\shenh\Documents\GitHub\winform-word-tool\WordOpenXmlClassConsole\obj\Debug\WordOpenXmlClassConsole.csprojAssemblyReference.cache
+C:\Users\shenh\Documents\GitHub\winform-word-tool\WordOpenXmlClassConsole\obj\Debug\WordOpenXmlClassConsole.csproj.CoreCompileInputs.cache
+C:\Users\shenh\Documents\GitHub\winform-word-tool\WordOpenXmlClassConsole\obj\Debug\WordOpenXmlClassConsole.exe
+C:\Users\shenh\Documents\GitHub\winform-word-tool\WordOpenXmlClassConsole\obj\Debug\WordOpenXmlClassConsole.pdb
+C:\Users\shenh\Documents\GitHub\winform-word-tool\WordOpenXmlClassConsole\bin\Debug\Aspose.Words.dll
+C:\Users\shenh\Documents\GitHub\winform-word-tool\WordOpenXmlClassConsole\bin\Debug\Aspose.Words.xml
+C:\Users\shenh\Documents\GitHub\winform-word-tool\WordOpenXmlClassConsole\obj\Debug\WordOpenXmlClassConsole.csproj.CopyComplete

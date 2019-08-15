@@ -54,7 +54,9 @@ namespace WordOpenXmlFormApp
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabelTip = new System.Windows.Forms.ToolStripStatusLabel();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripProgressBar = new System.Windows.Forms.ToolStripProgressBar();
+            this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -85,18 +87,20 @@ namespace WordOpenXmlFormApp
             this.button4 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.buttonObjectiveItem = new System.Windows.Forms.Button();
-            this.buttonExportFile = new System.Windows.Forms.Button();
+            this.buttonPreviewFile = new System.Windows.Forms.Button();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.docDocumentViewer = new Spire.DocViewer.Forms.DocDocumentViewer();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonZoomToDown = new System.Windows.Forms.Button();
+            this.buttonZoomToUp = new System.Windows.Forms.Button();
+            this.buttonExportFile = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonExit = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
-            this.tabControl1.SuspendLayout();
+            this.tabControl.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
@@ -116,7 +120,6 @@ namespace WordOpenXmlFormApp
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -224,7 +227,9 @@ namespace WordOpenXmlFormApp
             // 
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel,
-            this.toolStripStatusLabelTip});
+            this.toolStripStatusLabelTip,
+            this.toolStripStatusLabel1,
+            this.toolStripProgressBar});
             this.statusStrip.Location = new System.Drawing.Point(0, 593);
             this.statusStrip.Name = "statusStrip";
             this.statusStrip.Size = new System.Drawing.Size(1025, 22);
@@ -240,16 +245,29 @@ namespace WordOpenXmlFormApp
             this.toolStripStatusLabelTip.Name = "toolStripStatusLabelTip";
             this.toolStripStatusLabelTip.Size = new System.Drawing.Size(0, 17);
             // 
-            // tabControl1
+            // toolStripStatusLabel1
             // 
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(0, 25);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1025, 568);
-            this.tabControl1.TabIndex = 5;
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(1010, 17);
+            this.toolStripStatusLabel1.Spring = true;
+            // 
+            // toolStripProgressBar
+            // 
+            this.toolStripProgressBar.Name = "toolStripProgressBar";
+            this.toolStripProgressBar.Size = new System.Drawing.Size(100, 16);
+            this.toolStripProgressBar.Visible = false;
+            // 
+            // tabControl
+            // 
+            this.tabControl.Controls.Add(this.tabPage2);
+            this.tabControl.Controls.Add(this.tabPage1);
+            this.tabControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl.Location = new System.Drawing.Point(0, 25);
+            this.tabControl.Name = "tabControl";
+            this.tabControl.SelectedIndex = 0;
+            this.tabControl.Size = new System.Drawing.Size(1025, 568);
+            this.tabControl.TabIndex = 5;
+            this.tabControl.SelectedIndexChanged += new System.EventHandler(this.TabControl_SelectedIndexChanged);
             // 
             // tabPage2
             // 
@@ -259,7 +277,7 @@ namespace WordOpenXmlFormApp
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(1017, 542);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "创建答题卡";
+            this.tabPage2.Text = "答题卡";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // splitContainer2
@@ -436,7 +454,7 @@ namespace WordOpenXmlFormApp
             // 
             this.groupBox2.Controls.Add(this.groupBox8);
             this.groupBox2.Controls.Add(this.groupBox7);
-            this.groupBox2.Controls.Add(this.buttonExportFile);
+            this.groupBox2.Controls.Add(this.buttonPreviewFile);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Name = "groupBox2";
@@ -589,16 +607,16 @@ namespace WordOpenXmlFormApp
             this.buttonObjectiveItem.Text = "客观题";
             this.buttonObjectiveItem.UseVisualStyleBackColor = false;
             // 
-            // buttonExportFile
+            // buttonPreviewFile
             // 
-            this.buttonExportFile.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.buttonExportFile.Location = new System.Drawing.Point(10, 487);
-            this.buttonExportFile.Name = "buttonExportFile";
-            this.buttonExportFile.Size = new System.Drawing.Size(171, 39);
-            this.buttonExportFile.TabIndex = 2;
-            this.buttonExportFile.Text = "导出文件";
-            this.buttonExportFile.UseVisualStyleBackColor = true;
-            this.buttonExportFile.Click += new System.EventHandler(this.ButtonExportFile_Click);
+            this.buttonPreviewFile.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.buttonPreviewFile.Location = new System.Drawing.Point(10, 487);
+            this.buttonPreviewFile.Name = "buttonPreviewFile";
+            this.buttonPreviewFile.Size = new System.Drawing.Size(171, 39);
+            this.buttonPreviewFile.TabIndex = 2;
+            this.buttonPreviewFile.Text = "预览文件";
+            this.buttonPreviewFile.UseVisualStyleBackColor = true;
+            this.buttonPreviewFile.Click += new System.EventHandler(this.ButtonPreviewFile_Click);
             // 
             // tabPage1
             // 
@@ -619,7 +637,7 @@ namespace WordOpenXmlFormApp
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.pictureBox1);
+            this.splitContainer1.Panel1.Controls.Add(this.docDocumentViewer);
             // 
             // splitContainer1.Panel2
             // 
@@ -628,21 +646,25 @@ namespace WordOpenXmlFormApp
             this.splitContainer1.SplitterDistance = 816;
             this.splitContainer1.TabIndex = 3;
             // 
-            // pictureBox1
+            // docDocumentViewer
             // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(816, 536);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.docDocumentViewer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
+            this.docDocumentViewer.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.docDocumentViewer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.docDocumentViewer.EnableHandTools = false;
+            this.docDocumentViewer.Location = new System.Drawing.Point(0, 0);
+            this.docDocumentViewer.Name = "docDocumentViewer";
+            this.docDocumentViewer.Size = new System.Drawing.Size(816, 536);
+            this.docDocumentViewer.TabIndex = 0;
+            this.docDocumentViewer.Text = "docDocumentViewer1";
+            this.docDocumentViewer.ToPdfParameterList = null;
+            this.docDocumentViewer.ZoomMode = Spire.DocViewer.Forms.ZoomMode.Default;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.buttonZoomToDown);
+            this.groupBox1.Controls.Add(this.buttonZoomToUp);
+            this.groupBox1.Controls.Add(this.buttonExportFile);
             this.groupBox1.Controls.Add(this.panel1);
             this.groupBox1.Controls.Add(this.buttonExit);
             this.groupBox1.Controls.Add(this.button1);
@@ -655,18 +677,41 @@ namespace WordOpenXmlFormApp
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "操作...";
             // 
-            // button2
+            // buttonZoomToDown
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.Font = new System.Drawing.Font("宋体", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(20, 88);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(151, 36);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "导出文件";
-            this.button2.UseVisualStyleBackColor = false;
+            this.buttonZoomToDown.Font = new System.Drawing.Font("宋体", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.buttonZoomToDown.Location = new System.Drawing.Point(62, 130);
+            this.buttonZoomToDown.Name = "buttonZoomToDown";
+            this.buttonZoomToDown.Size = new System.Drawing.Size(36, 39);
+            this.buttonZoomToDown.TabIndex = 5;
+            this.buttonZoomToDown.Text = "-";
+            this.buttonZoomToDown.UseVisualStyleBackColor = true;
+            this.buttonZoomToDown.Click += new System.EventHandler(this.ButtonZoomToDown_Click);
+            // 
+            // buttonZoomToUp
+            // 
+            this.buttonZoomToUp.Font = new System.Drawing.Font("宋体", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.buttonZoomToUp.Location = new System.Drawing.Point(20, 130);
+            this.buttonZoomToUp.Name = "buttonZoomToUp";
+            this.buttonZoomToUp.Size = new System.Drawing.Size(36, 39);
+            this.buttonZoomToUp.TabIndex = 4;
+            this.buttonZoomToUp.Text = "+";
+            this.buttonZoomToUp.UseVisualStyleBackColor = true;
+            this.buttonZoomToUp.Click += new System.EventHandler(this.ButtonZoomToUp_Click);
+            // 
+            // buttonExportFile
+            // 
+            this.buttonExportFile.BackColor = System.Drawing.Color.Transparent;
+            this.buttonExportFile.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonExportFile.Font = new System.Drawing.Font("宋体", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.buttonExportFile.ForeColor = System.Drawing.Color.Black;
+            this.buttonExportFile.Location = new System.Drawing.Point(20, 88);
+            this.buttonExportFile.Name = "buttonExportFile";
+            this.buttonExportFile.Size = new System.Drawing.Size(151, 36);
+            this.buttonExportFile.TabIndex = 3;
+            this.buttonExportFile.Text = "导出文件";
+            this.buttonExportFile.UseVisualStyleBackColor = false;
+            this.buttonExportFile.Click += new System.EventHandler(this.ButtonExportFile_Click);
             // 
             // panel1
             // 
@@ -705,7 +750,7 @@ namespace WordOpenXmlFormApp
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1025, 615);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.tabControl);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.toolStrip);
             this.Name = "ApplicationForm";
@@ -714,7 +759,7 @@ namespace WordOpenXmlFormApp
             this.toolStrip.PerformLayout();
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
-            this.tabControl1.ResumeLayout(false);
+            this.tabControl.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.splitContainer2.Panel1.ResumeLayout(false);
             this.splitContainer2.Panel2.ResumeLayout(false);
@@ -736,7 +781,6 @@ namespace WordOpenXmlFormApp
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -759,7 +803,7 @@ namespace WordOpenXmlFormApp
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelTip;
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl tabControl;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.SplitContainer splitContainer2;
         private System.Windows.Forms.GroupBox groupBox4;
@@ -790,15 +834,19 @@ namespace WordOpenXmlFormApp
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button buttonObjectiveItem;
-        private System.Windows.Forms.Button buttonExportFile;
+        private System.Windows.Forms.Button buttonPreviewFile;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonExportFile;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button buttonExit;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonZoomToUp;
+        private System.Windows.Forms.Button buttonZoomToDown;
+        private System.Windows.Forms.ToolStripProgressBar toolStripProgressBar;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private Spire.DocViewer.Forms.DocDocumentViewer docDocumentViewer;
     }
 }
 

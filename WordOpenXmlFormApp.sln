@@ -10,6 +10,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordOpenXmlFormApp", "WordO
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordOpenXmlClassLibrary", "WordOpenXmlClassLibrary\WordOpenXmlClassLibrary.csproj", "{5449F7E1-6C69-47D8-93DF-28CC5AEDAF43}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordOpenXmlClassConsole", "WordOpenXmlClassConsole\WordOpenXmlClassConsole.csproj", "{CA7DA720-9F26-4DBC-8C2F-CEAA5E488EFE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5449F7E1-6C69-47D8-93DF-28CC5AEDAF43} = {5449F7E1-6C69-47D8-93DF-28CC5AEDAF43}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +29,10 @@ Global
 		{5449F7E1-6C69-47D8-93DF-28CC5AEDAF43}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5449F7E1-6C69-47D8-93DF-28CC5AEDAF43}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5449F7E1-6C69-47D8-93DF-28CC5AEDAF43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA7DA720-9F26-4DBC-8C2F-CEAA5E488EFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA7DA720-9F26-4DBC-8C2F-CEAA5E488EFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA7DA720-9F26-4DBC-8C2F-CEAA5E488EFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA7DA720-9F26-4DBC-8C2F-CEAA5E488EFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

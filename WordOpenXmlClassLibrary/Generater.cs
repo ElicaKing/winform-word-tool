@@ -236,8 +236,7 @@ namespace WordOpenXmlClassLibrary
                     "学校：________________________\n" +
                     "姓名：________________________\n" +
                     "试室：________________________\n" +
-                    "座位：________________________\n"));
-            this.body.Append(new GenerateBreakLine().Create());
+                    "座位：________________________\n \n"));
             this.body.Append(new GenerateBreakLine().Create());
             this.body.Append(new GenerateBreakLine().Create());
             this.body.Append(new GenerateBreakLine().Create());
