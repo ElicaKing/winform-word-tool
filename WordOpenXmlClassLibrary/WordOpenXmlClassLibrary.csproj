@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5449F7E1-6C69-47D8-93DF-28CC5AEDAF43}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WordOpenXmlClassLibrary</RootNamespace>
+    <AssemblyName>WordOpenXmlClassLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.9.1.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\WordOpenXmlFormApp\packages\DocumentFormat.OpenXml.2.9.1\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\DocWFormApp\packages\System.IO.FileSystem.Primitives.4.3.0\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Packaging, Version=4.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\DocWFormApp\packages\System.IO.Packaging.4.5.0\lib\net46\System.IO.Packaging.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DocumentStructure\GenerateBreakLine.cs" />
+    <Compile Include="DocumentStructure\GenerateTableExamineeNoFrame.cs" />
+    <Compile Include="DocumentStructure\GenerateTableGrids.cs" />
+    <Compile Include="DocumentStructure\GenerateTablePaneRow.cs" />
+    <Compile Include="DocumentStructure\GenerateTableSeparateRow.cs" />
+    <Compile Include="DocumentStructure\GenerateTextFrame.cs" />
+    <Compile Include="DocumentStructure\GenerateTextItem.cs" />
+    <Compile Include="DocumentStructure\GenerateTextSubTitle.cs" />
+    <Compile Include="DocumentStructure\GenerateTextMainTitle.cs" />
+    <Compile Include="DocumentStructure\GenerateTextTitle.cs" />
+    <Compile Include="Document\Body\Table\TableProperties\TableOverlap\GenerateTableOverlap.cs" />
+    <Compile Include="Document\Body\Table\TableProperties\TablePositionProperties\GenerateTablePositionProperties.cs" />
+    <Compile Include="Document\Body\Table\TableRow\TableCell\TableCellProperties\TableCellBorders\GenerateTableCellBorders.cs" />
+    <Compile Include="Document\Body\Table\TableRow\TableRowProperties\CantSplit\GenerateTableCantSplit.cs" />
+    <Compile Include="Generater.cs" />
+    <Compile Include="Document\Body\GenerateBody.cs" />
+    <Compile Include="Document\Body\Paragraph\GenerateParagraph.cs" />
+    <Compile Include="Document\Body\Paragraph\ParagraphProperties\BookmarkEnd\GenerateBookmarkEnd.cs" />
+    <Compile Include="Document\Body\Paragraph\ParagraphProperties\BookmarkStart\GenerateBookmarkStart.cs" />
+    <Compile Include="Document\Body\Paragraph\ParagraphProperties\Justification\GenerateJustification.cs" />
+    <Compile Include="Document\Body\Paragraph\ParagraphProperties\GenerateParagraphProperties.cs" />
+    <Compile Include="Document\Body\Paragraph\Run\GenerateRun.cs" />
+    <Compile Include="Document\Body\Paragraph\Run\Picture\GeneratePicture.cs" />
+    <Compile Include="Document\Body\Paragraph\Run\Picture\Line\GenerateLine.cs" />
+    <Compile Include="Document\Body\Paragraph\Run\Picture\Shape\GenerateFill.cs" />
+    <Compile Include="Document\Body\Paragraph\Run\Picture\Shape\GenerateImageData.cs" />
+    <Compile Include="Document\Body\Paragraph\Run\Picture\Shape\GenerateLock.cs" />
+    <Compile Include="Document\Body\Paragraph\Run\Picture\Shape\GeneratePath.cs" />
+    <Compile Include="Document\Body\Paragraph\Run\Picture\Shape\GenerateShape.cs" />
+    <Compile Include="Document\Body\Paragraph\Run\Picture\Shape\GenerateStroke.cs" />
+    <Compile Include="Document\Body\Paragraph\Run\Picture\Shape\TextBox\GenerateTextBox.cs" />
+    <Compile Include="Document\Body\Paragraph\Run\Picture\Shape\TextBox\TextBoxContent\GenerateTextBoxContent.cs" />
+    <Compile Include="Document\Body\Paragraph\Run\RunProperties\Bold\GenerateBold.cs" />
+    <Compile Include="Document\Body\Paragraph\Run\RunProperties\FontSize\GenerateFontSize.cs" />
+    <Compile Include="Document\Body\Paragraph\Run\RunProperties\GenerateRunProperties.cs" />
+    <Compile Include="Document\Body\Paragraph\Run\RunProperties\RunFonts\GenerateRunFonts.cs" />
+    <Compile Include="Document\Body\Paragraph\Run\Text\GenerateText.cs" />
+    <Compile Include="Document\Body\SectionProperties\Columns\GenerateColumn.cs" />
+    <Compile Include="Document\Body\SectionProperties\Columns\GenerateColumns.cs" />
+    <Compile Include="Document\Body\SectionProperties\GeneratePageMargin.cs" />
+    <Compile Include="Document\Body\SectionProperties\GeneratePageSize.cs" />
+    <Compile Include="Document\Body\SectionProperties\GenerateSectionProperties.cs" />
+    <Compile Include="Document\Body\SectionProperties\PageBorders\GeneratePageBorders.cs" />
+    <Compile Include="Document\Body\Table\GenerateTable.cs" />
+    <Compile Include="Document\Body\Table\TableGrid\GenerateTableGrid.cs" />
+    <Compile Include="Document\Body\Table\TableGrid\GridColumn\GenerateGridColumn.cs" />
+    <Compile Include="Document\Body\Table\TableProperties\GenerateTableProperties.cs" />
+    <Compile Include="Document\Body\Table\TableProperties\TableBorders\GenerateTableBorders.cs" />
+    <Compile Include="Document\Body\Table\TableProperties\TableBorders\InsideHorizontalBorder\GenerateInsideHorizontalBorder.cs" />
+    <Compile Include="Document\Body\Table\TableProperties\TableBorders\InsideVerticalBorder\GenerateInsideVerticalBorder.cs" />
+    <Compile Include="Document\Body\Table\TableProperties\TableBorders\RightBorder\GenerateRightBorder.cs" />
+    <Compile Include="Document\Body\Table\TableProperties\TableBorders\BottomBorder\GenerateBottomBorder.cs" />
+    <Compile Include="Document\Body\Table\TableProperties\TableBorders\LeftBorder\GenerateLeftBorder.cs" />
+    <Compile Include="Document\Body\Table\TableProperties\TableBorders\TopBorder\GenerateTopBorder.cs" />
+    <Compile Include="Document\Body\Table\TableProperties\TableCellMarginDefault\BottomMargin\GenerateBottomMargin.cs" />
+    <Compile Include="Document\Body\Table\TableProperties\TableCellMarginDefault\GenerateTableCellMarginDefault.cs" />
+    <Compile Include="Document\Body\Table\TableProperties\TableCellMarginDefault\TableCellLeftMargin\GenerateTableCellLeftMargin.cs" />
+    <Compile Include="Document\Body\Table\TableProperties\TableCellMarginDefault\TableCellRightMargin\GenerateTableCellRightMargin.cs" />
+    <Compile Include="Document\Body\Table\TableProperties\TableCellMarginDefault\TopMargin\GenerateTopMargin.cs" />
+    <Compile Include="Document\Body\Table\TableProperties\TableIndentation\GenerateTableIndentation.cs" />
+    <Compile Include="Document\Body\Table\TableProperties\TableJustification\GenerateTableJustification.cs" />
+    <Compile Include="Document\Body\Table\TableProperties\TableLayout\GenerateTableLayout.cs" />
+    <Compile Include="Document\Body\Table\TableProperties\TableStyle\GenerateTableStyle.cs" />
+    <Compile Include="Document\Body\Table\TableProperties\TableWidth\GenerateTableWidth.cs" />
+    <Compile Include="Document\Body\Table\TableRow\GenerateTableRow.cs" />
+    <Compile Include="Document\Body\Table\TableRow\TableCell\GenerateTableCell.cs" />
+    <Compile Include="Document\Body\Table\TableRow\TableCell\TableCellProperties\GenerateTableCellProperties.cs" />
+    <Compile Include="Document\Body\Table\TableRow\TableCell\TableCellProperties\GridSpan\GenerateGridSpan.cs" />
+    <Compile Include="Document\Body\Table\TableRow\TableCell\TableCellProperties\TableCellVerticalAlignment\GenerateTableCellVerticalAlignment.cs" />
+    <Compile Include="Document\Body\Table\TableRow\TableCell\TableCellProperties\TableCellWidth\GenerateTableCellWidth.cs" />
+    <Compile Include="Document\Body\Table\TableRow\TablePropertyExceptions\GenerateTablePropertyExceptions.cs" />
+    <Compile Include="Document\Body\Table\TableRow\TableRowProperties\GenerateTableRowProperties.cs" />
+    <Compile Include="Document\Body\Table\TableRow\TableRowProperties\TableRowHeight\GenerateTableRowHeight.cs" />
+    <Compile Include="Enum\PageSizeValues.cs" />
+    <Compile Include="GeneratedClass.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\FilePathUtil.cs" />
+    <Compile Include="Utils\DateTimeUtil.cs" />
+    <Compile Include="Utils\WordLengthUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

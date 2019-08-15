@@ -1,0 +1,16 @@
+C:\Users\shenh\Documents\GitHub\winform-word-tool\WordOpenXmlFormApp\bin\Debug\WordOpenXmlFormApp.exe.config
+C:\Users\shenh\Documents\GitHub\winform-word-tool\WordOpenXmlFormApp\bin\Debug\WordOpenXmlFormApp.exe
+C:\Users\shenh\Documents\GitHub\winform-word-tool\WordOpenXmlFormApp\bin\Debug\WordOpenXmlFormApp.pdb
+C:\Users\shenh\Documents\GitHub\winform-word-tool\WordOpenXmlFormApp\obj\Debug\WordOpenXmlFormApp.csprojAssemblyReference.cache
+C:\Users\shenh\Documents\GitHub\winform-word-tool\WordOpenXmlFormApp\obj\Debug\WordOpenXmlFormApp.Properties.Resources.resources
+C:\Users\shenh\Documents\GitHub\winform-word-tool\WordOpenXmlFormApp\obj\Debug\WordOpenXmlFormApp.csproj.GenerateResource.cache
+C:\Users\shenh\Documents\GitHub\winform-word-tool\WordOpenXmlFormApp\obj\Debug\WordOpenXmlFormApp.csproj.CoreCompileInputs.cache
+C:\Users\shenh\Documents\GitHub\winform-word-tool\WordOpenXmlFormApp\obj\Debug\WordOpenXmlFormApp.exe
+C:\Users\shenh\Documents\GitHub\winform-word-tool\WordOpenXmlFormApp\obj\Debug\WordOpenXmlFormApp.pdb
+C:\Users\shenh\Documents\GitHub\winform-word-tool\WordOpenXmlFormApp\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\shenh\Documents\GitHub\winform-word-tool\WordOpenXmlFormApp\bin\Debug\System.IO.Packaging.dll
+C:\Users\shenh\Documents\GitHub\winform-word-tool\WordOpenXmlFormApp\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\shenh\Documents\GitHub\winform-word-tool\WordOpenXmlFormApp\obj\Debug\WordOpenXmlFormApp.csproj.CopyComplete
+C:\Users\shenh\Documents\GitHub\winform-word-tool\WordOpenXmlFormApp\obj\Debug\WordOpenXmlFormApp.ApplicationForm.resources
+C:\Users\shenh\Documents\GitHub\winform-word-tool\WordOpenXmlFormApp\bin\Debug\WordOpenXmlClassLibrary.dll
+C:\Users\shenh\Documents\GitHub\winform-word-tool\WordOpenXmlFormApp\bin\Debug\WordOpenXmlClassLibrary.pdb

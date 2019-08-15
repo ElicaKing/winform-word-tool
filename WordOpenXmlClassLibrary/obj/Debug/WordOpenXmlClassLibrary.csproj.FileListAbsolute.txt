@@ -1,0 +1,9 @@
+C:\Users\shenh\source\repos\WordOpenXmlClassLibrary\bin\Debug\WordOpenXmlClassLibrary.dll
+C:\Users\shenh\source\repos\WordOpenXmlClassLibrary\bin\Debug\WordOpenXmlClassLibrary.pdb
+C:\Users\shenh\source\repos\WordOpenXmlClassLibrary\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\shenh\source\repos\WordOpenXmlClassLibrary\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\shenh\source\repos\WordOpenXmlClassLibrary\obj\Debug\WordOpenXmlClassLibrary.csprojAssemblyReference.cache
+C:\Users\shenh\source\repos\WordOpenXmlClassLibrary\obj\Debug\WordOpenXmlClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\shenh\source\repos\WordOpenXmlClassLibrary\obj\Debug\WordOpenXmlClassLibrary.csproj.CopyComplete
+C:\Users\shenh\source\repos\WordOpenXmlClassLibrary\obj\Debug\WordOpenXmlClassLibrary.dll
+C:\Users\shenh\source\repos\WordOpenXmlClassLibrary\obj\Debug\WordOpenXmlClassLibrary.pdb
