@@ -9,8 +9,6 @@ C:\Users\shenh\source\repos\WordOpenXmlClassLibrary\obj\Debug\WordOpenXmlClassLi
 C:\Users\shenh\source\repos\WordOpenXmlClassLibrary\obj\Debug\WordOpenXmlClassLibrary.pdb
 C:\Users\shenh\Documents\GitHub\winform-word-tool\WordOpenXmlClassLibrary\bin\Debug\WordOpenXmlClassLibrary.dll
 C:\Users\shenh\Documents\GitHub\winform-word-tool\WordOpenXmlClassLibrary\bin\Debug\WordOpenXmlClassLibrary.pdb
-C:\Users\shenh\Documents\GitHub\winform-word-tool\WordOpenXmlClassLibrary\bin\Debug\DocumentFormat.OpenXml.xml
-C:\Users\shenh\Documents\GitHub\winform-word-tool\WordOpenXmlClassLibrary\obj\Debug\WordOpenXmlClassLibrary.csprojAssemblyReference.cache
 C:\Users\shenh\Documents\GitHub\winform-word-tool\WordOpenXmlClassLibrary\obj\Debug\WordOpenXmlClassLibrary.csproj.CoreCompileInputs.cache
 C:\Users\shenh\Documents\GitHub\winform-word-tool\WordOpenXmlClassLibrary\obj\Debug\WordOpenXmlClassLibrary.csproj.CopyComplete
 C:\Users\shenh\Documents\GitHub\winform-word-tool\WordOpenXmlClassLibrary\obj\Debug\WordOpenXmlClassLibrary.dll

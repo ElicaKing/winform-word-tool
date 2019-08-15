@@ -2,9 +2,9 @@
 # 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
 ################################################################################
 
-/.vs
-/packages
-/WordOpenXmlFormApp/obj
-/WordOpenXmlFormApp/bin
-/WordOpenXmlClassLibrary/obj
-/WordOpenXmlClassLibrary/bin
+.vs
+packages
+WordOpenXmlFormApp/obj
+WordOpenXmlFormApp/bin
+WordOpenXmlClassLibrary/obj
+WordOpenXmlClassLibrary/bin

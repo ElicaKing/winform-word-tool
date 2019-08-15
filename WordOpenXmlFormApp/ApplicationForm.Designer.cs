@@ -38,8 +38,8 @@ namespace WordOpenXmlFormApp
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ApplicationForm));
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("考试名称");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("考号信息");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("考试名称");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("考号信息");
             this.toolStrip = new System.Windows.Forms.ToolStrip();
             this.新建NToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.打开OToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -82,8 +82,6 @@ namespace WordOpenXmlFormApp
             this.panel9 = new System.Windows.Forms.Panel();
             this.button13 = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.button12 = new System.Windows.Forms.Button();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.buttonObjectiveItem = new System.Windows.Forms.Button();
@@ -424,13 +422,13 @@ namespace WordOpenXmlFormApp
             this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.treeView1.Location = new System.Drawing.Point(5, 19);
             this.treeView1.Name = "treeView1";
-            treeNode1.Name = "nodeExamName";
-            treeNode1.Text = "考试名称";
-            treeNode2.Name = "nodeExamineeNum";
-            treeNode2.Text = "考号信息";
+            treeNode3.Name = "nodeExamName";
+            treeNode3.Text = "考试名称";
+            treeNode4.Name = "nodeExamineeNum";
+            treeNode4.Text = "考号信息";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode2});
+            treeNode3,
+            treeNode4});
             this.treeView1.Size = new System.Drawing.Size(208, 512);
             this.treeView1.TabIndex = 0;
             // 
@@ -508,8 +506,6 @@ namespace WordOpenXmlFormApp
             this.groupBox7.Controls.Add(this.panel9);
             this.groupBox7.Controls.Add(this.button13);
             this.groupBox7.Controls.Add(this.panel8);
-            this.groupBox7.Controls.Add(this.button12);
-            this.groupBox7.Controls.Add(this.panel7);
             this.groupBox7.Controls.Add(this.button4);
             this.groupBox7.Controls.Add(this.panel2);
             this.groupBox7.Controls.Add(this.buttonObjectiveItem);
@@ -526,7 +522,7 @@ namespace WordOpenXmlFormApp
             // button14
             // 
             this.button14.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button14.Location = new System.Drawing.Point(10, 240);
+            this.button14.Location = new System.Drawing.Point(10, 186);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(151, 36);
             this.button14.TabIndex = 17;
@@ -536,7 +532,7 @@ namespace WordOpenXmlFormApp
             // panel9
             // 
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel9.Location = new System.Drawing.Point(10, 222);
+            this.panel9.Location = new System.Drawing.Point(10, 168);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(151, 18);
             this.panel9.TabIndex = 16;
@@ -544,7 +540,7 @@ namespace WordOpenXmlFormApp
             // button13
             // 
             this.button13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button13.Location = new System.Drawing.Point(10, 186);
+            this.button13.Location = new System.Drawing.Point(10, 132);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(151, 36);
             this.button13.TabIndex = 9;
@@ -554,28 +550,10 @@ namespace WordOpenXmlFormApp
             // panel8
             // 
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel8.Location = new System.Drawing.Point(10, 168);
+            this.panel8.Location = new System.Drawing.Point(10, 114);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(151, 18);
             this.panel8.TabIndex = 15;
-            // 
-            // button12
-            // 
-            this.button12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button12.Location = new System.Drawing.Point(10, 132);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(151, 36);
-            this.button12.TabIndex = 14;
-            this.button12.Text = "解答题";
-            this.button12.UseVisualStyleBackColor = true;
-            // 
-            // panel7
-            // 
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(10, 114);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(151, 18);
-            this.panel7.TabIndex = 13;
             // 
             // button4
             // 
@@ -809,8 +787,6 @@ namespace WordOpenXmlFormApp
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button buttonObjectiveItem;
