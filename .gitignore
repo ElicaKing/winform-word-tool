@@ -9,3 +9,4 @@ WordOpenXmlFormApp/bin/*
 WordOpenXmlClassLibrary/obj/*
 WordOpenXmlClassLibrary/bin/*
 
+*.cache
