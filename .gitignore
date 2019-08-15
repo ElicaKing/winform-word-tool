@@ -4,9 +4,9 @@
 
 .vs/*
 packages
-WordOpenXmlFormApp/obj/*
-WordOpenXmlFormApp/bin/*
-WordOpenXmlClassLibrary/obj/*
-WordOpenXmlClassLibrary/bin/*
+WordOpenXmlFormApp/obj
+WordOpenXmlFormApp/bin
+WordOpenXmlClassLibrary/obj
+WordOpenXmlClassLibrary/bin
 
 *.cache
