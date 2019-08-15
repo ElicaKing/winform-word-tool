@@ -38,8 +38,8 @@ namespace WordOpenXmlFormApp
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ApplicationForm));
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("考试名称");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("考号信息");
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("考试名称");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("考号信息");
             this.toolStrip = new System.Windows.Forms.ToolStrip();
             this.新建NToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.打开OToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -440,13 +440,13 @@ namespace WordOpenXmlFormApp
             this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.treeView1.Location = new System.Drawing.Point(5, 19);
             this.treeView1.Name = "treeView1";
-            treeNode3.Name = "nodeExamName";
-            treeNode3.Text = "考试名称";
-            treeNode4.Name = "nodeExamineeNum";
-            treeNode4.Text = "考号信息";
+            treeNode5.Name = "nodeExamName";
+            treeNode5.Text = "考试名称";
+            treeNode6.Name = "nodeExamineeNum";
+            treeNode6.Text = "考号信息";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode3,
-            treeNode4});
+            treeNode5,
+            treeNode6});
             this.treeView1.Size = new System.Drawing.Size(208, 512);
             this.treeView1.TabIndex = 0;
             // 
