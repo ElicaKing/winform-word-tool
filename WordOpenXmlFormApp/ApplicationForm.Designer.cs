@@ -86,7 +86,7 @@ namespace WordOpenXmlFormApp
             this.panel7 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
+            this.buttonObjectiveItem = new System.Windows.Forms.Button();
             this.buttonExportFile = new System.Windows.Forms.Button();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
@@ -512,7 +512,7 @@ namespace WordOpenXmlFormApp
             this.groupBox7.Controls.Add(this.panel7);
             this.groupBox7.Controls.Add(this.button4);
             this.groupBox7.Controls.Add(this.panel2);
-            this.groupBox7.Controls.Add(this.button6);
+            this.groupBox7.Controls.Add(this.buttonObjectiveItem);
             this.groupBox7.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox7.Location = new System.Drawing.Point(10, 24);
             this.groupBox7.Margin = new System.Windows.Forms.Padding(3, 3, 3, 10);
@@ -587,7 +587,7 @@ namespace WordOpenXmlFormApp
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(151, 36);
             this.button4.TabIndex = 12;
-            this.button4.Text = "填空题";
+            this.button4.Text = "主观题";
             this.button4.UseVisualStyleBackColor = false;
             // 
             // panel2
@@ -598,18 +598,18 @@ namespace WordOpenXmlFormApp
             this.panel2.Size = new System.Drawing.Size(151, 18);
             this.panel2.TabIndex = 11;
             // 
-            // button6
+            // buttonObjectiveItem
             // 
-            this.button6.BackColor = System.Drawing.Color.Transparent;
-            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button6.Font = new System.Drawing.Font("宋体", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button6.ForeColor = System.Drawing.Color.Black;
-            this.button6.Location = new System.Drawing.Point(10, 24);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(151, 36);
-            this.button6.TabIndex = 10;
-            this.button6.Text = "客观题";
-            this.button6.UseVisualStyleBackColor = false;
+            this.buttonObjectiveItem.BackColor = System.Drawing.Color.Transparent;
+            this.buttonObjectiveItem.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonObjectiveItem.Font = new System.Drawing.Font("宋体", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.buttonObjectiveItem.ForeColor = System.Drawing.Color.Black;
+            this.buttonObjectiveItem.Location = new System.Drawing.Point(10, 24);
+            this.buttonObjectiveItem.Name = "buttonObjectiveItem";
+            this.buttonObjectiveItem.Size = new System.Drawing.Size(151, 36);
+            this.buttonObjectiveItem.TabIndex = 10;
+            this.buttonObjectiveItem.Text = "客观题";
+            this.buttonObjectiveItem.UseVisualStyleBackColor = false;
             // 
             // buttonExportFile
             // 
@@ -813,7 +813,7 @@ namespace WordOpenXmlFormApp
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button buttonObjectiveItem;
         private System.Windows.Forms.Button buttonExportFile;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.SplitContainer splitContainer1;

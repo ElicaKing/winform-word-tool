@@ -3,5 +3,8 @@
 ################################################################################
 
 /.vs
+/packages
 /WordOpenXmlFormApp/obj
+/WordOpenXmlFormApp/bin
 /WordOpenXmlClassLibrary/obj
+/WordOpenXmlClassLibrary/bin
